@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+    top: 160px;
+  position: relative;
+  z-index: -1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  border: 5px solid #885452;
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 300px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: -1; 
+  border: 3px solid lightgreen;
+  width: 35%;
+  left: 270px;
+  top: 265px;
+  height: 80px;
+}
+#i1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+p{
+    position: absolute;
+    top: 60%;
+}
+</style>
+</head>
+<body>
+
+<h1>Z-index Example</h1>
+
+<p>An element with greater stack order is always above an element with a lower stack order.</p>
+<div><img src="image.jpeg" id="i1">
+<div class="container"></div>
+  <div class="black-box">Black box (z-index: 1)</div>
+  <div class="gray-box">Gray box (z-index: 3)</div>
+  <div class="green-box">Green box (z-index: 2)</div>
+</div>
+</div>
+</body>
+</html>
+
+
