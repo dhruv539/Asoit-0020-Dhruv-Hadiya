@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Tooltip</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Tooltip Example</h3>
+        <a href="#" data-toggle="tooltip" title="jap ne bhay">click me to boom</a>
+        <a href="#" data-toggle="tooltip" title="this is image"><img src="./1.jpg" alt="no image"></a>
+      </div>
+
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+</body>
+</html>
