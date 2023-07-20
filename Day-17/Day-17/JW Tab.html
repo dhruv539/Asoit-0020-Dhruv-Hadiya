@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Tabs - Default functionality</title>
+		
+      <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+			
+      <script type = "text/javascript" 
+         src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+  
+      <script>
+         $(function() {
+            $( "#tabs" ).tabs();
+         });
+      </script>
+   </head>
+	
+   <body>
+      <div id = "tabs">
+        <ul>
+            <li><a href = "#tabs-1">Android</a></li>
+            <li><a href = "#tabs-2">CSS</a></li>
+            <li><a href = "#tabs-3">AngularJS</a></li>
+         </ul>
+			
+         <div id = "tabs-1">
+            <p>Android is an open source and Linux-based operating system 
+               for mobile devices such as smartphones and tablet computers. 
+               Android was developed by the Open Handset Alliance, led by Google, 
+               and other companies.</p>
+         </div>
+			
+         <div id = "tabs-2">
+            <p>CSS is the acronym for "Cascading Style Sheet". This
+               tutorial covers both the versions CSS1,CSS2 and CSS3, and gives a
+               complete understanding of CSS,starting from its basics to advanced 
+               concepts.</p>
+         </div>
+			
+         <div id = "tabs-3">
+            <p>AngularJS is a very powerful JavaScript library. It is used
+               in Single Page Application (SPA) projects. It extends HTML DOM 
+               with additional attributes and makes it more responsive to user 
+               actions. AngularJS is open source,completely free, and used by
+               thousands of developers around the world. It is licensed under 
+               the Apache license version 2.0.</p>
+         </div>
+      </div>
+   </body>
+</html>

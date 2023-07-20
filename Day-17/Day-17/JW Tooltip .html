@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Tooltip - Default functionality</title>
+		
+      <link rel = "stylesheet" 
+         href = "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+			
+      <script src = "//code.jquery.com/jquery-1.10.2.js">
+      </script>
+      <script src = "//code.jquery.com/ui/1.11.4/jquery-ui.js">
+      </script>
+		
+      <script>
+         $(function() {
+            $( document ).tooltip();
+         });
+      </script>
+		
+      <style>
+         label {
+            display: inline-block;
+            width: 15em;
+         }
+      </style>
+   </head>
+
+   <body>
+      <p><a href = "#" title = "Tutorials point india Pvt ltd">
+         Tutorials point</a> Free tutorials and reference manuals with
+         examples for Concordion, 5G, JBPM5, SAP, Agile, SVG, Web Icons, KDB+,
+         Web Analytics, Google Maps, Joomla, Self</p>
+			
+      <p><a href = "https://www.tutorialspoint.com/jquery/index.htm"
+         title = "J Query tutorials"> J Query</a> is a fast and 
+         concise JavaScript library created by John Resig in 2006. 
+         jQuery simplifies HTML document traversing, event handling,  
+         animating, and Ajax interactions for Rapid Web Development.</p>
+			
+      <p><label for = "age">your tutorials details</label>
+         <input id = "age" title = "Please enter your tutorial name. 
+         We will search in our data base"></p>
+   </body>
+</html>
