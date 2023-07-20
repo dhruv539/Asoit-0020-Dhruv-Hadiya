@@ -1,0 +1,50 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+body
+{
+    background-color: cadetblue;
+    padding:0 10px;
+}
+.container
+{
+   
+    max-width:500px;
+    width:100%;
+    background-color: white;
+    margin:20px auto;
+    padding:30px;
+    box-shadow: 5px 5px 2px rgba(0,0,0,0.5);
+
+}
+.container .title
+{
+    font-size:24px;
+    font-weight:700px;
+    margin-bottom: 25px;
+    color:cadetblue;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container .form
+{
+    width:100%;
+}
+.container .form .input_filed
+{
+    margin-bottom: 15px;
+    display:flex;
+    align-items:center;
+
+}
+.container .form .input_filed label 
+{
+    
+    width:200px;
+    margin-right: 10px;
+    font-size: 14px;
+
+}
