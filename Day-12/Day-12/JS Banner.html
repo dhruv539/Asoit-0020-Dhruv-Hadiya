@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Banner</title>
+    <style>
+        .banner {
+            width: auto;
+            border: solid;
+            border-color: #ebe6e6;
+            text-align: center;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+    </style>
+    <script language="Javascript">
+        var ImgBanners = new Array('b1.jpg', 'b2.jpg',
+            'b3.jpg');
+        var count = 0;
+        let timeout;
+        function ShowBanners() {
+            if (document.images) {
+                count++; // Counter increment
+
+                if (count == ImgBanners.length) {
+                    count = 0;
+                }
+                document.ChangeBanner.src = ImgBanners[count];
+                timeout = setTimeout("ShowBanners()", 5000);
+            }
+        }
+        function stopBannersMoveing() {
+            console.log("Movening Stop");
+            clearTimeout(timeout);
+            count = 0;
+        }
+    </script>
+</head>
+
+<body onload="ShowBanners()">
+    <div class="banner">
+        <img src="b1.jpg" name="ChangeBanner">
+    </div>
+    <button onclick="stopBannersMoveing()">Stop Movening!</button>
+</body>
+
+</html>

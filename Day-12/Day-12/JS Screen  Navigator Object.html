@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Screen / Navigator Info </title>
+    <script>
+        function screenNavigatorFun() {
+            var sInfo = "";
+            sInfo += "screen.width: " + screen.width;
+            sInfo += "<br/>screen.height: " + screen.height;
+            sInfo += "<br/>screen.availWidth: " + screen.availWidth;
+            sInfo += "<br/>screen.availHeight: " + screen.availHeight;
+            sInfo += "<br/>screen.colorDepth: " + screen.colorDepth;
+            sInfo += "<br/>screen.pixelDepth: " + screen.pixelDepth;
+            document.getElementById("screenInfo").innerHTML = sInfo;
+            var nInfo = "";
+            nInfo += "navigator.cookieEnabled: " + navigator.cookieEnabled;
+            nInfo += "<br/>navigator.language: " + navigator.language;
+            nInfo += "<br/>navigator.platform: " + navigator.platform;
+            document.getElementById("navigatorInfo").innerHTML = nInfo;
+        }
+        function goBack() {
+            history.back();//for previous page
+        }
+        function goForward() {
+            history.forward();//for next page
+        }
+    </script>
+</head>
+
+<body>
+
+    <button type="button" onclick="screenNavigatorFun()">
+        Get Screen / Navigator Info
+    </button>
+    <h4>Screen Info</h4>
+    <span id="screenInfo"></span>
+    <h4>Navigator Info</h4>
+    <span id="navigatorInfo"></span>
+    <button type="button" onclick="goBack()">
+        Back
+    </button>
+    <button type="button" onclick="goForward()">
+        Next
+    </button>
+</body>
+
+</html>
